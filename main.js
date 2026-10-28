@@ -1,4 +1,7 @@
-// Mobile menu
+// The Village Bakery & Cafe — Village market redesign:
+// mobile menu (instant toggle), scroll-spy, menu tabs, lightbox, contact form (mailto).
+
+// Mobile menu: toggle instantly (no transition), closes on link tap.
 const toggle = document.querySelector('[data-menu-toggle]');
 const nav = document.querySelector('[data-mobile-menu]');
 if (toggle && nav) {
@@ -25,6 +28,28 @@ const spy = new IntersectionObserver(entries => {
   });
 }, { rootMargin: '-40% 0px -55% 0px' });
 sections.forEach(s => spy.observe(s));
+
+// Menu tabs: one panel visible at a time.
+const tabBtns = document.querySelectorAll('.tab-btn');
+tabBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    tabBtns.forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
+    });
+    document.querySelectorAll('.tab-panel').forEach(p => {
+      p.classList.remove('active');
+      p.hidden = true;
+    });
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    const panel = document.getElementById(btn.getAttribute('data-tab'));
+    if (panel) {
+      panel.classList.add('active');
+      panel.hidden = false;
+    }
+  });
+});
 
 // Lightbox
 const items = [...document.querySelectorAll('.g-item')];

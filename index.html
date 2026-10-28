@@ -8,9 +8,29 @@
 <title>The Village Bakery &amp; Cafe, Caerleon | Bakery &amp; Cafe in Newport</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600;6..72,700&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "The Village Bakery & Cafe",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "31 Backhall Street",
+    "addressLocality": "Caerleon",
+    "addressRegion": "Newport",
+    "postalCode": "NP18 1AR",
+    "addressCountry": "GB"
+  },
+  "telephone": "+44 1633 439500",
+  "email": "thevillagecaerleon@gmail.com",
+  "servesCuisine": ["Cafe", "British", "Deli", "Welsh"],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "65" },
+  "openingHours": ["Mo-Sa 08:00-18:00", "Su 10:00-15:00"]
+}
+</script>
 </head>
 <body>
 <a class="skip" href="#menu">Skip to the menu</a>
@@ -36,136 +56,145 @@
   </div>
 </header>
 
-<main id="home">
-  <!-- HERO: photo mosaic, full-bleed, not a boxed photo -->
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-copy">
-      <p class="kicker"><i class="bi bi-geo-alt" aria-hidden="true"></i> 31 Backhall Street, Caerleon, Newport</p>
-      <h1 id="hero-title">Fresh from the oven, served at the table.</h1>
-      <p class="hero-lead">A village bakery and cafe in the heart of Caerleon: baked goods, pastries, deli plates and good coffee, enjoyed in or out in the open air.</p>
-      <div class="hero-actions">
-        <a class="btn btn-green" href="#menu">See the menu board</a>
-        <a class="btn btn-outline" href="tel:+441633439500"><i class="bi bi-telephone" aria-hidden="true"></i> 01633 439500</a>
+<main>
+  <!-- HERO: full-width photo with an overlapping cream info card -->
+  <section class="hero" id="home" aria-labelledby="hero-title">
+    <div class="hero-photo">
+      <img src="images/hero-bread-1600.webp" srcset="images/hero-bread-800.webp 800w, images/hero-bread-1600.webp 1600w" sizes="100vw" alt="Freshly baked seeded and flour-dusted bread loaves" fetchpriority="high">
+    </div>
+    <div class="wrap">
+      <div class="hero-card">
+        <p class="kicker"><i class="bi bi-geo-alt" aria-hidden="true"></i> 31 Backhall Street, Caerleon, Newport</p>
+        <h1 id="hero-title">Fresh from the oven, served at the table.</h1>
+        <p class="hero-lead">A village bakery and cafe in the heart of Caerleon: baked goods, pastries, deli plates and good coffee, enjoyed in or out in the open air.</p>
+        <div class="hero-actions">
+          <a class="btn btn-green" href="#menu">See the menu board</a>
+          <a class="btn btn-outline-dark" href="tel:+441633439500"><i class="bi bi-telephone" aria-hidden="true"></i> 01633 439500</a>
+        </div>
+        <p class="hero-rating"><span class="stars" aria-hidden="true"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span> <strong>4.8</strong> · 65 Tripadvisor reviews <span class="dot-sep" aria-hidden="true">·</span> Cafe · British · Deli · Welsh <span class="dot-sep" aria-hidden="true">·</span> Outdoor seating</p>
       </div>
-      <dl class="hero-facts">
-        <div><dt>Rating</dt><dd>4.8 · 65 Tripadvisor reviews</dd></div>
-        <div><dt>Food</dt><dd>Cafe · British · Deli · Welsh</dd></div>
-        <div><dt>Open today</dt><dd>See hours below</dd></div>
-      </dl>
-    </div>
-    <div class="mosaic" aria-label="Photographs of bread, pastries and coffee">
-      <img class="mosaic-main" src="images/hero-bread-1600.webp" srcset="images/hero-bread-800.webp 800w, images/hero-bread-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 55vw" alt="Freshly baked seeded and flour-dusted bread loaves" fetchpriority="high">
-      <img src="images/croissants-800.webp" srcset="images/croissants-800.webp 800w, images/croissants-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="Golden croissants dusted with sugar" loading="lazy">
-      <img src="images/coffee-cup-800.webp" srcset="images/coffee-cup-800.webp 800w, images/coffee-cup-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="Cups of coffee with latte art held over a cafe table" loading="lazy">
-      <img src="images/pastries-tray-800.webp" srcset="images/pastries-tray-800.webp 800w, images/pastries-tray-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 55vw" alt="Cinnamon rolls fresh from the oven" loading="lazy">
     </div>
   </section>
 
-  <!-- TRUST BAR -->
-  <section class="trustbar" aria-label="At a glance">
-    <ul>
-      <li><i class="bi bi-star-fill" aria-hidden="true"></i><strong>4.8 rated</strong><span>65 Tripadvisor reviews</span></li>
-      <li><i class="bi bi-basket" aria-hidden="true"></i><strong>Bakery &amp; cafe</strong><span>Cafe, British, deli, Welsh</span></li>
-      <li><i class="bi bi-tree" aria-hidden="true"></i><strong>Outdoor seating</strong><span>A pleasant place to sit outside</span></li>
-      <li><i class="bi bi-geo-alt" aria-hidden="true"></i><strong>Caerleon village</strong><span>Backhall Street, Newport</span></li>
-    </ul>
+  <!-- MARKET STRIP -->
+  <section class="strip" aria-label="At a glance">
+    <div class="wrap">
+      <ul>
+        <li><i class="bi bi-star-fill" aria-hidden="true"></i><strong>4.8 rated</strong><span>65 Tripadvisor reviews</span></li>
+        <li><i class="bi bi-basket" aria-hidden="true"></i><strong>Bakery &amp; cafe</strong><span>Cafe, British, deli, Welsh</span></li>
+        <li><i class="bi bi-tree" aria-hidden="true"></i><strong>Outdoor seating</strong><span>A pleasant place to sit outside</span></li>
+        <li><i class="bi bi-geo-alt" aria-hidden="true"></i><strong>Caerleon village</strong><span>Backhall Street, Newport</span></li>
+      </ul>
+    </div>
   </section>
 
-  <!-- MENU BOARD -->
-  <section id="menu" class="section menu-section" aria-labelledby="menu-title">
+  <!-- MENU BOARD: tabbed -->
+  <section id="menu" class="section" aria-labelledby="menu-title">
     <div class="wrap">
       <p class="section-kicker">The board</p>
       <h2 id="menu-title">What is on the menu board</h2>
-      <p class="section-intro">A small menu, done well: the bakery counter, the deli plate and the coffee bar. Prices on request.</p>
-      <div class="menu-board">
-        <div class="board-col">
-          <h3><i class="bi bi-cup-hot" aria-hidden="true"></i> Coffee &amp; drinks</h3>
-          <ul>
+      <p class="section-intro">A small menu, done well: the bakery counter, the deli plate and the coffee bar.</p>
+      <div class="tabs" role="tablist" aria-label="Menu sections">
+        <button type="button" class="tab-btn active" role="tab" id="tab-coffee" aria-selected="true" aria-controls="panel-coffee" data-tab="panel-coffee"><i class="bi bi-cup-hot" aria-hidden="true"></i> Coffee &amp; drinks</button>
+        <button type="button" class="tab-btn" role="tab" id="tab-bakery" aria-selected="false" aria-controls="panel-bakery" data-tab="panel-bakery"><i class="bi bi-croissant" aria-hidden="true"></i> Bakery &amp; pastries</button>
+        <button type="button" class="tab-btn" role="tab" id="tab-plates" aria-selected="false" aria-controls="panel-plates" data-tab="panel-plates"><i class="bi bi-egg-fried" aria-hidden="true"></i> Cafe plates</button>
+      </div>
+      <div class="tab-panels">
+        <div class="tab-panel active" role="tabpanel" id="panel-coffee" aria-labelledby="tab-coffee">
+          <ul class="menu-list">
             <li><span>Espresso, flat white and latte</span></li>
             <li><span>Cappuccino and filter coffee</span></li>
             <li><span>Tea and soft drinks</span></li>
           </ul>
         </div>
-        <div class="board-col">
-          <h3><i class="bi bi-croissant" aria-hidden="true"></i> Bakery &amp; pastries</h3>
-          <ul>
+        <div class="tab-panel" role="tabpanel" id="panel-bakery" aria-labelledby="tab-bakery" hidden>
+          <ul class="menu-list">
             <li><span>Fresh bread and rolls</span></li>
             <li><span>Croissants and pastries</span></li>
             <li><span>Cakes and sweet treats</span></li>
           </ul>
         </div>
-        <div class="board-col">
-          <h3><i class="bi bi-egg-fried" aria-hidden="true"></i> Cafe plates</h3>
-          <ul>
+        <div class="tab-panel" role="tabpanel" id="panel-plates" aria-labelledby="tab-plates" hidden>
+          <ul class="menu-list">
             <li><span>Breakfast and brunch plates</span></li>
             <li><span>Deli sandwiches and plates</span></li>
             <li><span>Pasties, a local favourite</span></li>
           </ul>
         </div>
       </div>
-      <p class="menu-note">Ask in store or by phone for the day's full board, including what has just come out of the oven.</p>
+      <p class="menu-foot">Prices on request. Ask in store or by phone for the day's full board, including what has just come out of the oven.</p>
     </div>
   </section>
 
-  <!-- STORY -->
-  <section id="story" class="section story" aria-labelledby="story-title">
-    <div class="wrap story-grid">
-      <div>
+  <!-- STORY: full-bleed photo band with an overlay text card -->
+  <section id="story" class="story-band" aria-labelledby="story-title">
+    <img class="story-band-photo" src="images/cafe-window-1600.webp" srcset="images/cafe-window-800.webp 800w, images/cafe-window-1600.webp 1600w" sizes="100vw" alt="A cafe table set with coffee by a bright window" loading="lazy">
+    <div class="wrap">
+      <div class="story-card">
         <p class="section-kicker">In Caerleon</p>
         <h2 id="story-title">A village stop, baked fresh</h2>
         <p>The Village Bakery &amp; Cafe sits on Backhall Street in Caerleon, a historic village on the edge of Newport. It is the kind of place to pause: coffee and a pastry in the morning, a deli plate at lunch, and a loaf to take home.</p>
         <p>Visitors praise the pastries and pasties, the friendly staff and the pleasant outdoor seating. The menu stays small and focused, so what is served is done well.</p>
         <a class="btn btn-green" href="#visit">Plan your visit</a>
       </div>
-      <figure class="story-photo">
-        <img src="images/cafe-window-1600.webp" srcset="images/cafe-window-800.webp 800w, images/cafe-window-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 45vw" alt="A cafe table set with coffee by a bright window" loading="lazy">
-        <figcaption>A quiet table, a fresh coffee, and time to sit a while.</figcaption>
-      </figure>
     </div>
   </section>
 
-  <!-- BAKERY RANGE: every card has a photo -->
+  <!-- BAKERY RANGE: alternating feature rows -->
   <section id="range" class="section" aria-labelledby="range-title">
     <div class="wrap">
       <p class="section-kicker">From the bakery</p>
       <h2 id="range-title">The bakery range</h2>
-      <div class="cards">
-        <article class="card">
-          <img src="images/bread-loaves-800.webp" srcset="images/bread-loaves-800.webp 800w, images/bread-loaves-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 30vw" alt="A basket of assorted freshly baked bread loaves" loading="lazy">
+      <div class="feature-row">
+        <figure class="feature-photo">
+          <img src="images/bread-loaves-800.webp" srcset="images/bread-loaves-800.webp 800w, images/bread-loaves-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="A basket of assorted freshly baked bread loaves" loading="lazy">
+        </figure>
+        <div class="feature-text">
+          <p class="feature-num" aria-hidden="true">01</p>
           <h3>Fresh bread</h3>
           <p>Seeded, flour-dusted and crusty loaves for the table at home.</p>
-        </article>
-        <article class="card">
-          <img src="images/pastries-tray-800.webp" srcset="images/pastries-tray-800.webp 800w, images/pastries-tray-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 30vw" alt="Freshly baked cinnamon rolls on a tray" loading="lazy">
+        </div>
+      </div>
+      <div class="feature-row flip">
+        <figure class="feature-photo">
+          <img src="images/pastries-tray-800.webp" srcset="images/pastries-tray-800.webp 800w, images/pastries-tray-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="Freshly baked cinnamon rolls on a tray" loading="lazy">
+        </figure>
+        <div class="feature-text">
+          <p class="feature-num" aria-hidden="true">02</p>
           <h3>Pastries &amp; pasties</h3>
           <p>The counter favourites visitors mention most: pastries and pasties, baked through the day.</p>
-        </article>
-        <article class="card">
-          <img src="images/cake-800.webp" srcset="images/cake-800.webp 800w, images/cake-1600.webp 1600w" sizes="(max-width: 700px) 100vw, 30vw" alt="A chocolate cake with piped chocolate topping on a cake stand" loading="lazy">
+        </div>
+      </div>
+      <div class="feature-row">
+        <figure class="feature-photo">
+          <img src="images/cake-800.webp" srcset="images/cake-800.webp 800w, images/cake-1600.webp 1600w" sizes="(max-width: 900px) 100vw, 50vw" alt="A chocolate cake with piped chocolate topping on a cake stand" loading="lazy">
+        </figure>
+        <div class="feature-text">
+          <p class="feature-num" aria-hidden="true">03</p>
           <h3>Cakes &amp; sweet treats</h3>
           <p>Cakes, cupcakes and sweet bakes for coffee, celebrations and taking home.</p>
-        </article>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- GALLERY + LIGHTBOX -->
+  <!-- GALLERY: masonry + lightbox -->
   <section id="gallery" class="section gallery-section" aria-labelledby="gallery-title">
     <div class="wrap">
       <p class="section-kicker">Inside &amp; out</p>
       <h2 id="gallery-title">A look around</h2>
       <p class="section-intro">Tap any photograph to view it larger.</p>
-      <div class="gallery">
-        <button type="button" class="g-item" data-full="images/cafe-interior-1600.webp"><img src="images/cafe-interior-800.webp" srcset="images/cafe-interior-800.webp 800w, images/cafe-interior-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="Cafe interior with counter, menu board and seating" loading="lazy"></button>
-        <button type="button" class="g-item" data-full="images/cafe-tables-1600.webp"><img src="images/cafe-tables-800.webp" srcset="images/cafe-tables-800.webp 800w, images/cafe-tables-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="Cafe tables and counter with baked goods on display" loading="lazy"></button>
-        <button type="button" class="g-item" data-full="images/cafe-outdoor-1600.webp"><img src="images/cafe-outdoor-800.webp" srcset="images/cafe-outdoor-800.webp 800w, images/cafe-outdoor-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="Outdoor cafe seating on a village street" loading="lazy"></button>
-        <button type="button" class="g-item" data-full="images/coffee-art-1600.webp"><img src="images/coffee-art-800.webp" srcset="images/coffee-art-800.webp 800w, images/coffee-art-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="Milk being poured to finish a latte" loading="lazy"></button>
-        <button type="button" class="g-item" data-full="images/breakfast-1600.webp"><img src="images/breakfast-800.webp" srcset="images/breakfast-800.webp 800w, images/breakfast-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="Toast topped with egg served on a plate" loading="lazy"></button>
-        <button type="button" class="g-item" data-full="images/food-table-1600.webp"><img src="images/food-table-800.webp" srcset="images/food-table-800.webp 800w, images/food-table-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="A brunch table with waffles, toast, fruit and coffee" loading="lazy"></button>
-        <button type="button" class="g-item" data-full="images/cupcakes-1600.webp"><img src="images/cupcakes-800.webp" srcset="images/cupcakes-800.webp 800w, images/cupcakes-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="Cupcakes with mint icing and sprinkles in a row" loading="lazy"></button>
-        <button type="button" class="g-item" data-full="images/dessert-brownie-1600.webp"><img src="images/dessert-brownie-800.webp" srcset="images/dessert-brownie-800.webp 800w, images/dessert-brownie-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="Chocolate brownie with ice cream and caramel sauce" loading="lazy"></button>
-        <button type="button" class="g-item" data-full="images/barista-1600.webp"><img src="images/barista-800.webp" srcset="images/barista-800.webp 800w, images/barista-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="Pour-over coffee being brewed at the counter" loading="lazy"></button>
-        <button type="button" class="g-item" data-full="images/toast-brunch-1600.webp"><img src="images/toast-brunch-800.webp" srcset="images/toast-brunch-800.webp 800w, images/toast-brunch-1600.webp 1600w" sizes="(max-width: 700px) 50vw, 25vw" alt="French toast topped with banana and blueberries" loading="lazy"></button>
+      <div class="masonry">
+        <button type="button" class="g-item" data-full="images/cafe-interior-1600.webp"><img src="images/cafe-interior-800.webp" srcset="images/cafe-interior-800.webp 800w, images/cafe-interior-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 33vw" alt="Cafe interior with counter, menu board and seating" loading="lazy"></button>
+        <button type="button" class="g-item" data-full="images/cafe-tables-1600.webp"><img src="images/cafe-tables-800.webp" srcset="images/cafe-tables-800.webp 800w, images/cafe-tables-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 33vw" alt="Cafe tables and counter with baked goods on display" loading="lazy"></button>
+        <button type="button" class="g-item" data-full="images/cafe-outdoor-1600.webp"><img src="images/cafe-outdoor-800.webp" srcset="images/cafe-outdoor-800.webp 800w, images/cafe-outdoor-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 33vw" alt="Outdoor cafe seating on a village street" loading="lazy"></button>
+        <button type="button" class="g-item" data-full="images/coffee-art-1600.webp"><img src="images/coffee-art-800.webp" srcset="images/coffee-art-800.webp 800w, images/coffee-art-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 33vw" alt="Milk being poured to finish a latte" loading="lazy"></button>
+        <button type="button" class="g-item" data-full="images/breakfast-1600.webp"><img src="images/breakfast-800.webp" srcset="images/breakfast-800.webp 800w, images/breakfast-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 33vw" alt="Toast topped with egg served on a plate" loading="lazy"></button>
+        <button type="button" class="g-item" data-full="images/food-table-1600.webp"><img src="images/food-table-800.webp" srcset="images/food-table-800.webp 800w, images/food-table-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 33vw" alt="A brunch table with waffles, toast, fruit and coffee" loading="lazy"></button>
+        <button type="button" class="g-item" data-full="images/cupcakes-1600.webp"><img src="images/cupcakes-800.webp" srcset="images/cupcakes-800.webp 800w, images/cupcakes-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 33vw" alt="Cupcakes with mint icing and sprinkles in a row" loading="lazy"></button>
+        <button type="button" class="g-item" data-full="images/dessert-brownie-1600.webp"><img src="images/dessert-brownie-800.webp" srcset="images/dessert-brownie-800.webp 800w, images/dessert-brownie-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 33vw" alt="Chocolate brownie with ice cream and caramel sauce" loading="lazy"></button>
+        <button type="button" class="g-item" data-full="images/barista-1600.webp"><img src="images/barista-800.webp" srcset="images/barista-800.webp 800w, images/barista-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 33vw" alt="Pour-over coffee being brewed at the counter" loading="lazy"></button>
+        <button type="button" class="g-item" data-full="images/toast-brunch-1600.webp"><img src="images/toast-brunch-800.webp" srcset="images/toast-brunch-800.webp 800w, images/toast-brunch-1600.webp 1600w" sizes="(max-width: 900px) 50vw, 33vw" alt="French toast topped with banana and blueberries" loading="lazy"></button>
       </div>
     </div>
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged photograph" hidden>
@@ -176,50 +205,66 @@
     </div>
   </section>
 
-  <!-- WHY LOCALS CHOOSE (review themes, no invented quotes) -->
-  <section class="section why" aria-labelledby="why-title">
+  <!-- WHY: numbered list with rules -->
+  <section id="why" class="section why" aria-labelledby="why-title">
     <div class="wrap">
       <p class="section-kicker">Why locals choose it</p>
       <h2 id="why-title">What visitors keep coming back for</h2>
       <p class="section-intro">Drawn from the themes of the cafe's public reviews, not invented praise.</p>
-      <div class="why-grid">
-        <article><i class="bi bi-croissant" aria-hidden="true"></i><h3>Pastries &amp; pasties</h3><p>Baked goods are the most praised part of a visit.</p></article>
-        <article><i class="bi bi-emoji-smile" aria-hidden="true"></i><h3>Friendly staff</h3><p>Welcoming service, noted again and again.</p></article>
-        <article><i class="bi bi-sun" aria-hidden="true"></i><h3>Pleasant outdoor seating</h3><p>A good spot outside when the weather allows.</p></article>
-        <article><i class="bi bi-check2-circle" aria-hidden="true"></i><h3>A small menu, done well</h3><p>Focused choices, well made, rather than a long list.</p></article>
-      </div>
+      <ol class="why-list">
+        <li>
+          <span class="why-num" aria-hidden="true">01</span>
+          <div><h3>Pastries &amp; pasties</h3><p>Baked goods are the most praised part of a visit.</p></div>
+        </li>
+        <li>
+          <span class="why-num" aria-hidden="true">02</span>
+          <div><h3>Friendly staff</h3><p>Welcoming service, noted again and again.</p></div>
+        </li>
+        <li>
+          <span class="why-num" aria-hidden="true">03</span>
+          <div><h3>Pleasant outdoor seating</h3><p>A good spot outside when the weather allows.</p></div>
+        </li>
+        <li>
+          <span class="why-num" aria-hidden="true">04</span>
+          <div><h3>A small menu, done well</h3><p>Focused choices, well made, rather than a long list.</p></div>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <!-- VISIT -->
+  <!-- VISIT: ticket-style card + map -->
   <section id="visit" class="section visit" aria-labelledby="visit-title">
     <div class="wrap">
       <p class="section-kicker">Find us</p>
       <h2 id="visit-title">Visit us in Caerleon</h2>
-      <div class="visit-grid">
-        <div class="visit-details">
+      <div class="ticket">
+        <div class="ticket-main">
           <address>
             <strong>The Village Bakery &amp; Cafe</strong><br>
             31 Backhall Street, Caerleon,<br>
             Newport NP18 1AR, Wales, UK
           </address>
-          <p><a href="tel:+441633439500"><i class="bi bi-telephone" aria-hidden="true"></i> 01633 439500</a><br>
-          <a href="mailto:thevillagecaerleon@gmail.com"><i class="bi bi-envelope" aria-hidden="true"></i> thevillagecaerleon@gmail.com</a><br>
-          <a href="https://facebook.com/thevillagecaerleon" target="_blank" rel="noopener"><i class="bi bi-facebook" aria-hidden="true"></i> facebook.com/thevillagecaerleon</a></p>
+          <p class="ticket-links">
+            <a href="tel:+441633439500"><i class="bi bi-telephone" aria-hidden="true"></i> 01633 439500</a><br>
+            <a href="mailto:thevillagecaerleon@gmail.com"><i class="bi bi-envelope" aria-hidden="true"></i> thevillagecaerleon@gmail.com</a><br>
+            <a href="https://facebook.com/thevillagecaerleon" target="_blank" rel="noopener"><i class="bi bi-facebook" aria-hidden="true"></i> facebook.com/thevillagecaerleon</a>
+          </p>
+        </div>
+        <div class="ticket-stub">
           <h3>Opening hours</h3>
           <table class="hours">
             <tr><th scope="row">Monday to Saturday</th><td>8am – 6pm</td></tr>
             <tr><th scope="row">Sunday</th><td>10am – 3pm</td></tr>
           </table>
         </div>
-        <div class="map-wrap">
-          <iframe title="Map: The Village Bakery and Cafe, 31 Backhall Street, Caerleon, Newport NP18 1AR" src="https://www.google.com/maps?q=31+Backhall+Street,+Caerleon,+Newport+NP18+1AR&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe title="Map: The Village Bakery and Cafe, 31 Backhall Street, Caerleon, Newport NP18 1AR" src="https://www.google.com/maps?q=31+Backhall+Street,+Caerleon,+Newport+NP18+1AR&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
+  <!-- FAQ: cards -->
   <section id="faq" class="section" aria-labelledby="faq-title">
     <div class="wrap faq-wrap">
       <p class="section-kicker">Good to know</p>
@@ -247,7 +292,7 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
+  <!-- CONTACT: split form -->
   <section id="contact" class="section contact-section" aria-labelledby="contact-title">
     <div class="wrap contact-grid">
       <div>
@@ -256,7 +301,7 @@
         <p>Send a message and it will open in your email app, addressed to the cafe. Or call directly.</p>
         <p class="contact-lines">
           <a class="btn btn-green" href="tel:+441633439500"><i class="bi bi-telephone" aria-hidden="true"></i> Call 01633 439500</a>
-          <a class="btn btn-outline-dark" href="mailto:thevillagecaerleon@gmail.com"><i class="bi bi-envelope" aria-hidden="true"></i> Email the cafe</a>
+          <a class="btn btn-outline-light" href="mailto:thevillagecaerleon@gmail.com"><i class="bi bi-envelope" aria-hidden="true"></i> Email the cafe</a>
         </p>
       </div>
       <form id="contact-form" action="mailto:thevillagecaerleon@gmail.com" method="get">
