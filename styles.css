@@ -100,6 +100,22 @@ h2{font-size:clamp(1.7rem,4vw,2.4rem);margin:.3rem 0 1rem}
 /* Footer */
 .site-footer{background:var(--green-dark);color:#D7E0D9;border-top:4px solid var(--moss);padding:28px 0}
 .site-footer a{color:#fff}
+
+/* PROFESSIONAL POLISH - 28 Oct 2026: richer hierarchy and composed cards */
+h2{font-size:clamp(2rem,4vw,2.8rem)}
+.section h2::after{content:"";display:block;width:56px;height:4px;background:var(--moss);margin-top:14px}
+.contact-section h2::after{background:#C9D4CB}
+.card{transition:transform .25s ease,box-shadow .25s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 32px rgba(46,74,58,.18)}
+.why-grid article{padding:26px 24px}
+.why-grid i{font-size:2rem;display:inline-block;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px}
+.why-grid p{font-size:1rem;line-height:1.6}
+.faq-wrap details{transition:border-color .2s ease,box-shadow .2s ease}
+.faq-wrap details:hover{border-color:var(--moss)}
+.faq-wrap details[open]{background:#fff;box-shadow:0 8px 24px rgba(46,74,58,.10)}
+.btn{transition:transform .2s ease,background .2s ease}
+.btn-green:hover{transform:translateY(-2px)}
+
 @media (max-width:900px){
   .hero{grid-template-columns:1fr}.hero-copy{padding:40px 20px}.mosaic{grid-template-rows:220px 180px}
   .menu-board,.story-grid,.visit-grid,.contact-grid{grid-template-columns:1fr}
